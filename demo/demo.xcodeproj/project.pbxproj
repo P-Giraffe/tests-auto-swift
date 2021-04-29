@@ -13,6 +13,7 @@
 		F829A81B263AC31D000A94B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F829A81A263AC31D000A94B7 /* Preview Assets.xcassets */; };
 		F829A829263AC37C000A94B7 /* demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A828263AC37C000A94B7 /* demoTests.swift */; };
 		F829A832263AC3E2000A94B7 /* Maths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A831263AC3E2000A94B7 /* Maths.swift */; };
+		F829A837263AEAEF000A94B7 /* Joueur.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A836263AEAEF000A94B7 /* Joueur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F829A828263AC37C000A94B7 /* demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoTests.swift; sourceTree = "<group>"; };
 		F829A82A263AC37C000A94B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F829A831263AC3E2000A94B7 /* Maths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maths.swift; sourceTree = "<group>"; };
+		F829A836263AEAEF000A94B7 /* Joueur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joueur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		F829A812263AC31D000A94B7 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				F829A835263AEAD4000A94B7 /* Model */,
 				F829A831263AC3E2000A94B7 /* Maths.swift */,
 				F829A813263AC31D000A94B7 /* demoApp.swift */,
 				F829A815263AC31D000A94B7 /* ContentView.swift */,
@@ -102,6 +105,14 @@
 				F829A82A263AC37C000A94B7 /* Info.plist */,
 			);
 			path = demoTests;
+			sourceTree = "<group>";
+		};
+		F829A835263AEAD4000A94B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F829A836263AEAEF000A94B7 /* Joueur.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F829A816263AC31D000A94B7 /* ContentView.swift in Sources */,
+				F829A837263AEAEF000A94B7 /* Joueur.swift in Sources */,
 				F829A832263AC3E2000A94B7 /* Maths.swift in Sources */,
 				F829A814263AC31D000A94B7 /* demoApp.swift in Sources */,
 			);

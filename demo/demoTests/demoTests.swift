@@ -26,6 +26,20 @@ class demoTests: XCTestCase {
         XCTAssertEqual(calculPuissance(nombre: 3, exposant: 0), 1)
         XCTAssertEqual(calculPuissance(nombre: 3, exposant: -1), 0.3333, accuracy: 0.0001)
     }
+    
+    func testJoueur() throws {
+        let j1 = Joueur()
+        XCTAssertEqual(j1.points, 0)
+        j1.partieGagnée()
+        XCTAssertEqual(j1.points, 30)
+        j1.partiePerdue()
+        XCTAssertEqual(j1.points, 0)
+        j1.partiePerdue()
+        XCTAssertEqual(j1.points, 0)
+        j1.points = 10
+        j1.partiePerdue()
+        XCTAssertEqual(j1.points, 0)
+    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
