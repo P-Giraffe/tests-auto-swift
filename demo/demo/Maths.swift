@@ -8,5 +8,5 @@
 import Foundation
 
 func calculPuissance(nombre:Double, exposant:Double) -> Double {
-    return 0
+    return pow(nombre, exposant)
 }

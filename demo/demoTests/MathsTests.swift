@@ -6,8 +6,10 @@
 //
 
 import XCTest
+@testable import demo
 
 class MathsTests: XCTestCase {
+
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -17,9 +19,11 @@ class MathsTests: XCTestCase {
     }
 
     func testCalculPuissance() throws {
-        // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        
+        XCTAssertEqual(calculPuissance(nombre: 4, exposant: 2), 16)
+        XCTAssertEqual(calculPuissance(nombre: 3, exposant: 4), 81)
+        XCTAssertEqual(calculPuissance(nombre: 3, exposant: 0), 1)
+        XCTAssertEqual(calculPuissance(nombre: 3, exposant: -1), 0.3333, accuracy: 0.0001)
     }
     
     func testCalculFactorielle() throws {
