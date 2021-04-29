@@ -13,7 +13,6 @@
 		F829A81B263AC31D000A94B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F829A81A263AC31D000A94B7 /* Preview Assets.xcassets */; };
 		F829A829263AC37C000A94B7 /* demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A828263AC37C000A94B7 /* demoTests.swift */; };
 		F829A832263AC3E2000A94B7 /* Maths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A831263AC3E2000A94B7 /* Maths.swift */; };
-		F829A834263AC4B2000A94B7 /* MathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A833263AC4B2000A94B7 /* MathsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 		F829A828263AC37C000A94B7 /* demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoTests.swift; sourceTree = "<group>"; };
 		F829A82A263AC37C000A94B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F829A831263AC3E2000A94B7 /* Maths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maths.swift; sourceTree = "<group>"; };
-		F829A833263AC4B2000A94B7 /* MathsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 			children = (
 				F829A828263AC37C000A94B7 /* demoTests.swift */,
 				F829A82A263AC37C000A94B7 /* Info.plist */,
-				F829A833263AC4B2000A94B7 /* MathsTests.swift */,
 			);
 			path = demoTests;
 			sourceTree = "<group>";
@@ -217,7 +214,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F829A829263AC37C000A94B7 /* demoTests.swift in Sources */,
-				F829A834263AC4B2000A94B7 /* MathsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
