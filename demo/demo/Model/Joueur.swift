@@ -13,6 +13,10 @@ class Joueur {
     }
     
     func partiePerdue() {
-        points -= min(points, 30)
+        if points < 30 {
+            print("Vous auriez dû être en négatif")
+        }
+        points -= min(points,30)
+        
     }
 }

@@ -41,10 +41,14 @@ class demoTests: XCTestCase {
         XCTAssertEqual(j1.points, 0)
     }
 
-    func testPerformanceExample() throws {
+    func testPerformancePartiePerdue() throws {
         // This is an example of a performance test case.
         measure {
-            // Put the code you want to measure the time of here.
+            for _ in 0...100_000 {
+                let j = Joueur()
+                j.points = 10
+                j.partiePerdue()
+            }
         }
     }
 
