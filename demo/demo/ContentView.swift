@@ -14,6 +14,8 @@ struct ContentView: View {
     var body: some View {
         VStack {
             TextField("Entrez votre email", text: $email)
+                .textContentType(.emailAddress)
+                .accessibility(identifier: "email field")
             Button("Envoyer", action: buttonTouched)
             if let message = successMessage {
                 Text(message)
