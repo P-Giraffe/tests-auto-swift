@@ -33,14 +33,29 @@ class demoUITests: XCTestCase {
         emailField.tap()
         emailField.typeText("mon-email.fr")
         app.buttons["Envoyer"].tap()
+        XCTAssertTrue(app.staticTexts["Email invalide"].exists)
+    }
+    
+    func testValidEmail() throws {
+        // UI tests must launch the application that they test.
+        let app = XCUIApplication()
+        app.launch()
+
+        // Use recording to get started writing UI tests.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let emailField = app.textFields["email field"]
+        emailField.tap()
+        emailField.typeText("mon@email.fr")
+        app.buttons["Envoyer"].tap()
+        XCTAssertTrue(app.staticTexts["Email envoyé à mon@email.fr"].exists)
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
+//    func testLaunchPerformance() throws {
+//        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
+//            // This measures how long it takes to launch your application.
+//            measure(metrics: [XCTApplicationLaunchMetric()]) {
+//                XCUIApplication().launch()
+//            }
+//        }
+//    }
 }

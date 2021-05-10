@@ -27,7 +27,11 @@ struct ContentView: View {
     }
     
     func buttonTouched() {
-        
+        if email.contains("@") {
+            successMessage = "Email envoyé à \(email)"
+        } else {
+            errorMessage = "Email invalide"
+        }
     }
 }
 
