@@ -16,6 +16,8 @@
 		F829A83A263B0798000A94B7 /* JoueurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A839263B0798000A94B7 /* JoueurTests.swift */; };
 		F829A83C263B07D2000A94B7 /* MathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A83B263B07D2000A94B7 /* MathsTests.swift */; };
 		F84237FA26493B3400FD085C /* SendEmailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84237F926493B3400FD085C /* SendEmailViewUITests.swift */; };
+		F89E24DB264A858F009C19E1 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24DA264A858F009C19E1 /* StringExtensions.swift */; };
+		F89E24DE264A8602009C19E1 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24DD264A8602009C19E1 /* StringExtensionsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		F84237F726493B3400FD085C /* demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84237F926493B3400FD085C /* SendEmailViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailViewUITests.swift; sourceTree = "<group>"; };
 		F84237FB26493B3400FD085C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F89E24DA264A858F009C19E1 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		F89E24DD264A8602009C19E1 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		F829A812263AC31D000A94B7 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				F89E24D9264A856D009C19E1 /* Extensions */,
 				F89E24D7264A7CDB009C19E1 /* UI */,
 				F829A835263AEAD4000A94B7 /* Model */,
 				F829A831263AC3E2000A94B7 /* Maths.swift */,
@@ -123,6 +128,7 @@
 		F829A827263AC37C000A94B7 /* demoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F89E24DC264A85E5009C19E1 /* Extensions */,
 				F829A838263B0777000A94B7 /* Model */,
 				F829A82A263AC37C000A94B7 /* Info.plist */,
 				F829A83B263B07D2000A94B7 /* MathsTests.swift */,
@@ -169,6 +175,22 @@
 				F84237F926493B3400FD085C /* SendEmailViewUITests.swift */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		F89E24D9264A856D009C19E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F89E24DA264A858F009C19E1 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F89E24DC264A85E5009C19E1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F89E24DD264A8602009C19E1 /* StringExtensionsTests.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +324,7 @@
 			files = (
 				F829A816263AC31D000A94B7 /* SendEmailView.swift in Sources */,
 				F829A837263AEAEF000A94B7 /* Joueur.swift in Sources */,
+				F89E24DB264A858F009C19E1 /* StringExtensions.swift in Sources */,
 				F829A832263AC3E2000A94B7 /* Maths.swift in Sources */,
 				F829A814263AC31D000A94B7 /* demoApp.swift in Sources */,
 			);
@@ -311,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F89E24DE264A8602009C19E1 /* StringExtensionsTests.swift in Sources */,
 				F829A83C263B07D2000A94B7 /* MathsTests.swift in Sources */,
 				F829A83A263B0798000A94B7 /* JoueurTests.swift in Sources */,
 			);

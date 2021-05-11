@@ -27,7 +27,8 @@ struct SendEmailView: View {
     }
     
     func buttonTouched() {
-        if email.contains("@") {
+        email = email.trimmingCharacters(in: [" "])
+        if email.isValidEmail {
             successMessage = "Email envoyé à \(email)"
         } else {
             errorMessage = "Email invalide"

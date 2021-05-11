@@ -28,7 +28,7 @@ class SendEmailViewUITests: XCTestCase {
     func testInvalidEmail() throws {
         let emailField = app.textFields["email field"]
         emailField.tap()
-        emailField.typeText("mon-email.fr")
+        emailField.typeText("will@acncom")
         app.buttons["Envoyer"].tap()
         XCTAssertTrue(app.staticTexts["Email invalide"].exists)
     }
@@ -37,6 +37,14 @@ class SendEmailViewUITests: XCTestCase {
         let emailField = app.textFields["email field"]
         emailField.tap()
         emailField.typeText("mon@email.fr")
+        app.buttons["Envoyer"].tap()
+        XCTAssertTrue(app.staticTexts["Email envoyé à mon@email.fr"].exists)
+    }
+    
+    func testValidEmailWithSpaces() throws {
+        let emailField = app.textFields["email field"]
+        emailField.tap()
+        emailField.typeText(" mon@email.fr ")
         app.buttons["Envoyer"].tap()
         XCTAssertTrue(app.staticTexts["Email envoyé à mon@email.fr"].exists)
     }
