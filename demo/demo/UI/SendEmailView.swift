@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SendEmailView: View {
     @State var email:String = ""
     @State var successMessage:String?
     @State var errorMessage:String?
@@ -37,6 +37,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SendEmailView()
     }
 }

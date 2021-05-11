@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F829A814263AC31D000A94B7 /* demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A813263AC31D000A94B7 /* demoApp.swift */; };
-		F829A816263AC31D000A94B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A815263AC31D000A94B7 /* ContentView.swift */; };
+		F829A816263AC31D000A94B7 /* SendEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A815263AC31D000A94B7 /* SendEmailView.swift */; };
 		F829A818263AC31D000A94B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F829A817263AC31D000A94B7 /* Assets.xcassets */; };
 		F829A81B263AC31D000A94B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F829A81A263AC31D000A94B7 /* Preview Assets.xcassets */; };
 		F829A832263AC3E2000A94B7 /* Maths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A831263AC3E2000A94B7 /* Maths.swift */; };
 		F829A837263AEAEF000A94B7 /* Joueur.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A836263AEAEF000A94B7 /* Joueur.swift */; };
 		F829A83A263B0798000A94B7 /* JoueurTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A839263B0798000A94B7 /* JoueurTests.swift */; };
 		F829A83C263B07D2000A94B7 /* MathsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F829A83B263B07D2000A94B7 /* MathsTests.swift */; };
-		F84237FA26493B3400FD085C /* demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84237F926493B3400FD085C /* demoUITests.swift */; };
+		F84237FA26493B3400FD085C /* SendEmailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84237F926493B3400FD085C /* SendEmailViewUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		F829A810263AC31D000A94B7 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F829A813263AC31D000A94B7 /* demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoApp.swift; sourceTree = "<group>"; };
-		F829A815263AC31D000A94B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F829A815263AC31D000A94B7 /* SendEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailView.swift; sourceTree = "<group>"; };
 		F829A817263AC31D000A94B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F829A81A263AC31D000A94B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F829A81C263AC31D000A94B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		F829A839263B0798000A94B7 /* JoueurTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoueurTests.swift; sourceTree = "<group>"; };
 		F829A83B263B07D2000A94B7 /* MathsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathsTests.swift; sourceTree = "<group>"; };
 		F84237F726493B3400FD085C /* demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F84237F926493B3400FD085C /* demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoUITests.swift; sourceTree = "<group>"; };
+		F84237F926493B3400FD085C /* SendEmailViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendEmailViewUITests.swift; sourceTree = "<group>"; };
 		F84237FB26493B3400FD085C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,10 +101,10 @@
 		F829A812263AC31D000A94B7 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				F89E24D7264A7CDB009C19E1 /* UI */,
 				F829A835263AEAD4000A94B7 /* Model */,
 				F829A831263AC3E2000A94B7 /* Maths.swift */,
 				F829A813263AC31D000A94B7 /* demoApp.swift */,
-				F829A815263AC31D000A94B7 /* ContentView.swift */,
 				F829A817263AC31D000A94B7 /* Assets.xcassets */,
 				F829A81C263AC31D000A94B7 /* Info.plist */,
 				F829A819263AC31D000A94B7 /* Preview Content */,
@@ -149,10 +149,26 @@
 		F84237F826493B3400FD085C /* demoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F84237F926493B3400FD085C /* demoUITests.swift */,
+				F89E24D8264A8145009C19E1 /* UI */,
 				F84237FB26493B3400FD085C /* Info.plist */,
 			);
 			path = demoUITests;
+			sourceTree = "<group>";
+		};
+		F89E24D7264A7CDB009C19E1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F829A815263AC31D000A94B7 /* SendEmailView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F89E24D8264A8145009C19E1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F84237F926493B3400FD085C /* SendEmailViewUITests.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F829A816263AC31D000A94B7 /* ContentView.swift in Sources */,
+				F829A816263AC31D000A94B7 /* SendEmailView.swift in Sources */,
 				F829A837263AEAEF000A94B7 /* Joueur.swift in Sources */,
 				F829A832263AC3E2000A94B7 /* Maths.swift in Sources */,
 				F829A814263AC31D000A94B7 /* demoApp.swift in Sources */,
@@ -304,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F84237FA26493B3400FD085C /* demoUITests.swift in Sources */,
+				F84237FA26493B3400FD085C /* SendEmailViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
