@@ -18,6 +18,12 @@
 		F84237FA26493B3400FD085C /* SendEmailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84237F926493B3400FD085C /* SendEmailViewUITests.swift */; };
 		F89E24DB264A858F009C19E1 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24DA264A858F009C19E1 /* StringExtensions.swift */; };
 		F89E24DE264A8602009C19E1 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24DD264A8602009C19E1 /* StringExtensionsTests.swift */; };
+		F89E24E0264A8AE3009C19E1 /* PrepareEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24DF264A8AE3009C19E1 /* PrepareEmailView.swift */; };
+		F89E24E3264AC53D009C19E1 /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24E2264AC53D009C19E1 /* PlayerController.swift */; };
+		F89E24E5264AC59E009C19E1 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24E4264AC59E009C19E1 /* Player.swift */; };
+		F89E24E7264AC60F009C19E1 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24E6264AC60F009C19E1 /* SQLiteDatabase.swift */; };
+		F89E24EA264AC6E6009C19E1 /* PlayerControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24E9264AC6E6009C19E1 /* PlayerControllerTests.swift */; };
+		F89E24EC264AC982009C19E1 /* MockDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89E24EB264AC982009C19E1 /* MockDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 		F84237FB26493B3400FD085C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F89E24DA264A858F009C19E1 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		F89E24DD264A8602009C19E1 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		F89E24DF264A8AE3009C19E1 /* PrepareEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareEmailView.swift; sourceTree = "<group>"; };
+		F89E24E2264AC53D009C19E1 /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		F89E24E4264AC59E009C19E1 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F89E24E6264AC60F009C19E1 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		F89E24E9264AC6E6009C19E1 /* PlayerControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControllerTests.swift; sourceTree = "<group>"; };
+		F89E24EB264AC982009C19E1 /* MockDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,7 @@
 		F829A812263AC31D000A94B7 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				F89E24E1264AC529009C19E1 /* Controllers */,
 				F89E24D9264A856D009C19E1 /* Extensions */,
 				F89E24D7264A7CDB009C19E1 /* UI */,
 				F829A835263AEAD4000A94B7 /* Model */,
@@ -128,6 +141,7 @@
 		F829A827263AC37C000A94B7 /* demoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F89E24E8264AC6CC009C19E1 /* Controllers */,
 				F89E24DC264A85E5009C19E1 /* Extensions */,
 				F829A838263B0777000A94B7 /* Model */,
 				F829A82A263AC37C000A94B7 /* Info.plist */,
@@ -140,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				F829A836263AEAEF000A94B7 /* Joueur.swift */,
+				F89E24E4264AC59E009C19E1 /* Player.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				F829A815263AC31D000A94B7 /* SendEmailView.swift */,
+				F89E24DF264A8AE3009C19E1 /* PrepareEmailView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -191,6 +207,24 @@
 				F89E24DD264A8602009C19E1 /* StringExtensionsTests.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F89E24E1264AC529009C19E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F89E24E2264AC53D009C19E1 /* PlayerController.swift */,
+				F89E24E6264AC60F009C19E1 /* SQLiteDatabase.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F89E24E8264AC6CC009C19E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F89E24E9264AC6E6009C19E1 /* PlayerControllerTests.swift */,
+				F89E24EB264AC982009C19E1 /* MockDatabase.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,8 +359,12 @@
 				F829A816263AC31D000A94B7 /* SendEmailView.swift in Sources */,
 				F829A837263AEAEF000A94B7 /* Joueur.swift in Sources */,
 				F89E24DB264A858F009C19E1 /* StringExtensions.swift in Sources */,
+				F89E24E0264A8AE3009C19E1 /* PrepareEmailView.swift in Sources */,
+				F89E24E5264AC59E009C19E1 /* Player.swift in Sources */,
+				F89E24E3264AC53D009C19E1 /* PlayerController.swift in Sources */,
 				F829A832263AC3E2000A94B7 /* Maths.swift in Sources */,
 				F829A814263AC31D000A94B7 /* demoApp.swift in Sources */,
+				F89E24E7264AC60F009C19E1 /* SQLiteDatabase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,7 +373,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F89E24DE264A8602009C19E1 /* StringExtensionsTests.swift in Sources */,
+				F89E24EC264AC982009C19E1 /* MockDatabase.swift in Sources */,
 				F829A83C263B07D2000A94B7 /* MathsTests.swift in Sources */,
+				F89E24EA264AC6E6009C19E1 /* PlayerControllerTests.swift in Sources */,
 				F829A83A263B0798000A94B7 /* JoueurTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

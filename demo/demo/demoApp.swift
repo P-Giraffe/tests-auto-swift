@@ -11,7 +11,16 @@ import SwiftUI
 struct demoApp: App {
     var body: some Scene {
         WindowGroup {
-            SendEmailView()
+            if let viewName = ProcessInfo.processInfo.environment["view"] {
+                switch viewName {
+                case "SendEmailView":
+                    SendEmailView()
+                default:
+                    PrepareEmailView()
+                }
+            } else {
+                PrepareEmailView()
+            }
         }
     }
 }
