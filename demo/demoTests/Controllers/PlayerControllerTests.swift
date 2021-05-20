@@ -19,8 +19,7 @@ class PlayerControllerTests: XCTestCase {
     }
 
     func testPlayerDidWinAGame() throws {
-        let playerController = PlayerController()
-        playerController.db = MockDatabase()
+        let playerController = PlayerController(db: MockDatabase())
         let player = playerController.playerDidWinAGame(name: "Ted Lasso")
         XCTAssertNotNil(player)
         XCTAssertEqual(30, player?.score)

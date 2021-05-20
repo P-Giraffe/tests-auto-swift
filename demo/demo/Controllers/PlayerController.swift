@@ -8,7 +8,10 @@
 import Foundation
 
 class PlayerController {
-    var db:Database = SQLiteDatabase()
+    let db:Database
+    init(db:Database = SQLiteDatabase()) {
+        self.db = db
+    }
     func playerDidWinAGame(name:String) -> Player? {
         var player = db.getPlayer(name: name)
         player?.gameWon()
